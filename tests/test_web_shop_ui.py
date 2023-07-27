@@ -47,7 +47,7 @@ class TestWebShopUI:
 
     @allure.tag('UI')
     @allure.title('Поиск товара')
-    @pytest.mark.parametrize('product', ('Science', '1MP 60GB Hard Drive Handycam Camcorder'))
+    @pytest.mark.parametrize('product', ('Health Book', 'Smartphone'))
     def test_search_product(self, auth_through_api, product):
         start_page.product_search(product)
 

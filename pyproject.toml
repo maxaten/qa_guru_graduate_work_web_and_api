@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "qa_guru_graduate_work_web_and_api"
+version = "0.1.0"
+description = ""
+authors = ["Maksim <maksim@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.3.2"
+selene = "2.0.0rc2"
+allure-pytest = "^2.13.2"
+Faker = "^18.13.0"
+jsonschema = "^4.18.0"
+curlify = "^2.2.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

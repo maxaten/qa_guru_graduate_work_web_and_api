@@ -17,4 +17,3 @@ target/
 /gradlew.bat
 __pycache__/
 venv/
-.env

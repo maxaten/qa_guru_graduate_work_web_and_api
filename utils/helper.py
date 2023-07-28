@@ -6,7 +6,6 @@ from requests import Session
 from curlify import to_curl
 import logging
 from datetime import datetime
-
 from utils import attach
 
 

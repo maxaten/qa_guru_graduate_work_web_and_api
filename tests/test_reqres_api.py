@@ -1,6 +1,5 @@
 import allure
 from jsonschema.validators import validate
-
 from utils.helper import load_json_schema
 
 
@@ -18,7 +17,7 @@ class TestReqresApi:
             json={
                 'name': name,
                 'job': job
-        })
+            })
 
         assert response.status_code == 201
         validate(instance=response.json(), schema=schema)
@@ -60,9 +59,8 @@ class TestReqresApi:
             }
         )
 
-        validate(instance=response.json() , schema=schema)
+        validate(instance=response.json(), schema=schema)
         assert response.status_code == 200
-
 
     @allure.tag('api')
     @allure.title('Удаление пользователя')
@@ -73,7 +71,7 @@ class TestReqresApi:
 
     @allure.tag('api')
     @allure.title('Обновление некоторых данных клиента')
-    def test_patch_user(self , reqres):
+    def test_patch_user(self, reqres):
         name = 'morpheus'
         job = 'zion resident'
         schema = load_json_schema('patch_user.json')
@@ -86,11 +84,10 @@ class TestReqresApi:
             }
         )
 
-        validate(response.json() , schema=schema)
+        validate(response.json(), schema=schema)
         assert response.status_code == 200
         assert response.json()['name'] == name
         assert response.json()['job'] == job
-
 
     @allure.tag('api')
     @allure.title('Загрузка страницы пользователей с задержкой')
@@ -105,14 +102,14 @@ class TestReqresApi:
             params={'delay': delay}
         )
 
-        validate(response.json() , schema=schema)
+        validate(response.json(), schema=schema)
         assert response.status_code == 200
         assert response.json()['per_page'] == per_page
         assert response.json()['page'] == page
 
     @allure.tag('api')
     @allure.title('Успешная авторизация пользователя')
-    def test_login_user(self , reqres):
+    def test_login_user(self, reqres):
         email = 'eve.holt@reqres.in'
         password = 'cityslicka'
         schema = load_json_schema('post_login_user.json')
@@ -125,12 +122,12 @@ class TestReqresApi:
             }
         )
 
-        validate(response.json() , schema=schema)
+        validate(response.json(), schema=schema)
         assert response.status_code == 200
 
     @allure.tag('api')
     @allure.title('Неуспешная авторизация пользователя')
-    def test_user_login_unsuccessful(self , reqres):
+    def test_user_login_unsuccessful(self, reqres):
         email = 'peter@klaven'
         text_error = 'Missing password'
         schema = load_json_schema('post_user_login_unsuccessful.json')
@@ -142,10 +139,9 @@ class TestReqresApi:
             }
         )
 
-        validate(response.json() , schema=schema)
+        validate(response.json(), schema=schema)
         assert response.status_code == 400
         assert response.json()['error'] == text_error
-
 
     @allure.tag('api')
     @allure.title('Неуспешная регистрация пользователя')

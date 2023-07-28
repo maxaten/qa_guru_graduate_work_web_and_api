@@ -1,13 +1,10 @@
 import os
 import pytest
-
 import allure
-
 from pages.base_page import BasePage
 from pages.registration_page import RegistrationPage
 from pages.authorization_page import AuthPage
 from pages.cart_page import ShoppingCartPage
-
 from utils.helper import generate_last_name, generate_first_name, generate_email
 
 reg_page = RegistrationPage()

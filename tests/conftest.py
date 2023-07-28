@@ -7,11 +7,7 @@ from dotenv import load_dotenv
 from utils.helper import CustomSession
 from utils import attach
 
-
-
 import requests
-
-
 
 
 @pytest.fixture(scope='session')

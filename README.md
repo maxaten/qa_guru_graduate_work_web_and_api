@@ -7,12 +7,11 @@
   <code><img width="5%" title="Pycharm" src="images/logo/pycharm.png"></code>
   <code><img width="5%" title="Python" src="images/logo/python.png"></code>
   <code><img width="5%" title="Pytest" src="images/logo/pytest.png"></code>
+  <code><img width="5%" title="Requests" src="images/logo/requests.png"></code>
   <code><img width="5%" title="Selene" src="images/logo/selene.png"></code>
   <code><img width="5%" title="Selenium" src="images/logo/selenium.png"></code>
   <code><img width="5%" title="GitHub" src="images/logo/github.png"></code>
   <code><img width="5%" title="Jenkins" src="images/logo/jenkins.png"></code>
-  <code><img width="5%" title="Requests" src="images/logo/requests.png"></code>
-  <code><img width="5%" title="Docker" src="images/logo/docker.png"></code>
   <code><img width="5%" title="Selenoid" src="images/logo/selenoid.png"></code>
   <code><img width="5%" title="Allure Report" src="images/logo/allure_report.png"></code>
   <code><img width="5%" title="Allure TestOps" src="images/logo/allure_testops.png"></code>
@@ -54,23 +53,22 @@
 
 ![Jenkins](/images/screenshot/jenkins_3.png)
 
-Отчет о прохождении тестов отправляется в телеграм, со ссылкой на Allure отчет.
-
-![Telegram](/images/screenshot/telegramm_report.png)
 
 ### __Примеры Allure отчётов:__ 
 
 ### [Allure Report](https://jenkins.autotests.cloud/job/qa_gugru_maxaten_graduate_work_web_and_api/17/allure/)
 
-UI и API тесты
+Диаграмма и график запуска тестов
 
 ![Allure Diagram](/images/screenshot/allure_report_diagramm.png)
+
+UI и API тесты
 
 ![Allure UI and Api](/images/screenshot/allure_report_tests.png)
 
 Пример видео прохождения теста
 
-![Allure vid](/images/screenshot/test_video.mp4)
+![Allure vid](/images/screenshot/test_video.gif)
 
 ### __Интеграции с другими сервисами:__ 
 [Allure TestOps](https://allure.autotests.cloud/launch/27918/tree?search=W3siaWQiOiJzdGF0dXMiLCJ0eXBlIjoidGVzdFN0YXR1c0FycmF5IiwidmFsdWUiOlsicGFzc2VkIl19XQ%3D%3D&treeId=6973)
@@ -80,3 +78,7 @@ UI и API тесты
 [Jira](https://jira.autotests.cloud/browse/HOMEWORK-825)
 
 ![Allure TestOps](/images/screenshot/jire_report.png)
+
+Отчет о прохождении тестов отправляется в телеграм, со ссылкой на Allure отчет.
+
+![Telegram](/images/screenshot/telegramm_report.png)
